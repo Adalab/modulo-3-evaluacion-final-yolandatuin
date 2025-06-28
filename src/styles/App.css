@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+  justify-content: center;
+  background-color: #18171C;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+/* HEADER */
+header img{
+  width: auto;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+}
+
+@media all and (max-width: 736px)
+{
+  header img {
+  width: 100%;
+  }
+}
+/* FORM */
+.form {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+}
+input {
+  background-color: #D4AF37;
+}
+
+/* CHARACTER CARD */
+.cards-list {
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  color: white;
+}
+.character-card {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.character-name {
+  font-family: "Pirata One", system-ui;
+  font-size: 1.5rem;
+}
+.character-card img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
