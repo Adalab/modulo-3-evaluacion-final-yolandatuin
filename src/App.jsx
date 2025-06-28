@@ -38,7 +38,7 @@ const filteredList = charactersList
       
       <Routes>
         <Route index element={<Landing searchName={searchName} setSearchName={setSearchName} houses={houses} filterHouse={filterHouse} setFilterHouse={setFilterHouse}  filteredList={filteredList}/>}></Route>
-        <Route path="/detail/:name" element={<DetailCard/>}></Route>
+        <Route path="/detail/:name" element={<DetailCard filteredList={filteredList}/>}></Route>
       </Routes>
     </div>
     </>

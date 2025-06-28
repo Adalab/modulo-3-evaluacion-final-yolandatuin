@@ -6,7 +6,13 @@
 body {
   justify-content: center;
   background-color: #18171C;
+  color: #E8DCCA;
   font-family: "Didact Gothic", sans-serif;
+}
+
+a, a:active, a:visited {
+  color: #E8DCCA;
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -52,7 +58,7 @@ input {
   margin-bottom: 1rem;
 }
 
-.character-name {
+h2 {
   font-family: "Pirata One", system-ui;
   font-size: 1.5rem;
 }

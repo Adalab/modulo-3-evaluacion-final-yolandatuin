@@ -1,0 +1,30 @@
+.detailCard {
+    color: #18171C;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:center;
+    margin-bottom: 1rem;
+    background-color: #E8DCCA;
+    width: 800px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.detailCard img {
+    height: 500px;
+}
+
+.detailCard_Text {
+    margin-left: 2rem;
+}
+
+.detailCard_Text h2 {
+    font-size: 3rem;
+}
+.detailCard_Text img {
+    width: 100px;
+    height: auto;
+
+
+}
