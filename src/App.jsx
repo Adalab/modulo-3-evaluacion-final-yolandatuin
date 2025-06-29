@@ -1,5 +1,5 @@
 
-import './styles/App.css';
+import './styles/App.scss';
 import Header from './components/Header.jsx';
 import DetailCard from './components/DetailCard.jsx';
 import { useEffect, useState } from 'react';

@@ -5,7 +5,13 @@ import slytherin from '../images/slytherin.png'
 import gryffindor from '../images/gryffindor.png'
 import ravenclaw from '../images/ravenclaw.png'
 
-import '../styles/detailCard.css';
+import ReactDOM from 'react-dom'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
+
+import '../styles/detailCard.scss';
 
 
 function DetailCard({filteredList}) {
@@ -20,13 +26,18 @@ function DetailCard({filteredList}) {
     <div className="detailCard">
       <img src={character.image} alt="{character.name}" />
       <div className="detailCard_Text">
-        <img src={character.house === "Hufflepuff" ? hufflepuff : 
-              character.house === "Ravenclaw" ? ravenclaw :
-              character.house === "Slytherin" ? slytherin :
-              character.house === "Gryffindor" ? gryffindor :
-              null
-        } alt={character.house} />
+
         
+          <img src={character.house === "Hufflepuff" ? hufflepuff : 
+          character.house === "Ravenclaw" ? ravenclaw :
+          character.house === "Slytherin" ? slytherin :
+          character.house === "Gryffindor" ? gryffindor :
+          null
+        } alt={character.house} />
+
+          <FontAwesomeIcon icon={faArrowLeft} />
+        
+
         <h2>{character.name}</h2>
         <p><strong>Gender: </strong>{character.gender}</p>
         <p><strong>Specie:</strong> {character.species}</p>
