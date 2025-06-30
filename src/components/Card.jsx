@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import placeholder from '../images/placeholder.jpg'
 
 
 function Card({index, character}) {
@@ -6,7 +7,7 @@ function Card({index, character}) {
     <>
     <Link to={"/detail/" + character.name}>
     <li className="character-card" key={index}>
-        <img src={character.image === "" ? 'https://placehold.co/200x250?text=HarryPotter' : character.image} alt={"foto de " + character.title} />
+        <img src={character.image === "" ? placeholder : character.image} alt={"foto de " + character.title} />
         <h2>{character.name}</h2>
         <p className="character-species">{character.species}</p>  
               
