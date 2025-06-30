@@ -32,7 +32,7 @@ function Form({searchName, setSearchName, houses, filterHouse, setFilterHouse}) 
           <option key={index} value={house}>{house}</option>
         )}
       </select>
-      <button>Buscar</button>
+      
     </form>
   )
 }

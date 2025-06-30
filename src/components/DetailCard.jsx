@@ -35,7 +35,7 @@ function DetailCard({filteredList}) {
           null
         } alt={character.house} />
 
-          <FontAwesomeIcon icon={faArrowLeft} />
+          
         
 
         <h2>{character.name}</h2>
@@ -52,7 +52,7 @@ function DetailCard({filteredList}) {
               <li key={index}>{item}</li>
             ))}
           </ul>
-          
+          <FontAwesomeIcon icon={faArrowLeft} />
         </>
 )}
 
